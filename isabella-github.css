@@ -1,4 +1,5 @@
 /* https://tiamarth.github.io/Isabella/ */
+@-moz-document domain("github.com") {
 body {
     --colorBlack: black;
     --colorWhite: white;
@@ -163,3 +164,13 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
 .thread-subscription-status .text-gray {color: var(--colorFg) !important;}
 /* pull requests page */
 .border-gray-light {border-color: var(--colorAc) !important;}
+
+}
+
+@-moz-document domain("help.github.com") {
+/* help.github.com */
+body > div:nth-child(1) {background-color: var(--colorAc) !important;}
+.text-blue-mktg {color: var(--colorHl) !important;}
+body > div:nth-child(1) .width-full .py-2.py-md-0.d-md-inline-block details summary svg {stroke: var(--colorHl) !important;}
+.markdown-body .highlight pre,.markdown-body pre {background-color: var(--colorAc);}
+}
