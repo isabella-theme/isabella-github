@@ -190,6 +190,10 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
     box-shadow: initial;
 }
 .avatar-before-user-status {border-color: transparent;}
+.h-card.col-3.float-left.pr-3 {
+    padding: 10px 20px !important;
+    background-color: var(--colorBgDarker);
+}
 .pinned-item-list-item {background-color: var(--colorBgDarker);}
 .js-yearly-contributions {
     padding: 10px 20px;
@@ -201,6 +205,28 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
     fill: var(--colorAc);
 }
 .contrib-legend.text-gray > ul > li:nth-child(1) {background-color: var(--colorAc) !important;}
+.profile-timeline-year-list.js-profile-timeline-year-list.bg-white.js-sticky.float-right.col-2.pl-5 {background-color: var(--colorBg) !important;}
+.filter-item.selected,.filter-item:hover {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+}
+.discussion-item-icon {
+    color: var(--colorFg);
+    background-color: transparent;
+    border-color: transparent;
+}
+.profile-rollup-icon svg path {color: var(--colorFg);}
+.profile-timeline-month-heading.bg-white.d-inline-block.h6.pr-2.py-1 {background-color: var(--colorBg) !important;}
+.profile-timeline.discussion-timeline .profile-timeline-month-heading:after {background-color: var(--colorBgDarker);}
+.profile-rollup-wrapper+.profile-rollup-wrapper {border-color: var(--colorBgDarker);}
+.profile-rollup-summarized+.profile-rollup-summarized {border-top: initial;}
+.profile-timeline-card-wrapper {border-color: var(--colorAc);}
+.ajax-pagination-form .ajax-pagination-btn {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker) !important;
+}
+.ajax-pagination-form .ajax-pagination-btn:active,.ajax-pagination-form .ajax-pagination-btn:hover {background-color: var(--colorBg);}
 /* organization profile */
 .orghead {
     color: var(--colorFg);
