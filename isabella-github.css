@@ -1,4 +1,4 @@
-/* https://tiamarth.github.io/Isabella/ */
+/* https://isabella-theme.github.io/Isabella/ */
 @-moz-document domain("github.com") {
 body {
     --colorBlack: black;
@@ -15,8 +15,17 @@ body {
     color: var(--colorFg);
     background-color: var(--colorBg);
 }
+.topic-tag {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+}
+.topic-tag:hover {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+}
 /* dashboard */
 a {color: var(--colorHl);}
+a:hover {color: var(--colorHl);}
 .btn-link {color: var(--colorHl);}
 .bg-white {background-color: var(--colorAc) !important;}
 .bg-gray {background-color: var(--colorBg) !important;}
@@ -52,7 +61,6 @@ aside.team-left-column {background-color: var(--colorBg);}
     color: var(--colorFg);
     background-color: var(--colorAc);
     background-image: linear-gradient(-180deg,var(--colorBgDarker),var(--colorAc) 90%);
-    transition: 0.2s ease-in-out;
 }
 .btn.hover,.btn:hover {
     background-color: var(--colorBg);
@@ -75,7 +83,6 @@ aside.team-left-column {background-color: var(--colorBg);}
 .social-count {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
-    transition: 0.2s ease-in-out;
 }
 .social-count:hover {
     color: var(--colorHlFg);
@@ -164,7 +171,29 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
 .thread-subscription-status .text-gray {color: var(--colorFg) !important;}
 /* pull requests page */
 .border-gray-light {border-color: var(--colorAc) !important;}
-
+/* organization profile */
+.orghead {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+    border-bottom: var(--colorAc);
+}
+.org-name {color: var(--colorFgBolded);}
+.pagehead-tabs-item.selected {
+    color: var(--colorFg);
+    background-color: var(--colorBg);
+    border-color: var(--colorHl) var(--colorBg) var(--colorBg);
+}
+.pagehead-tabs-item .Counter {color: var(--colorFg);}
+.pagehead-tabs-item,.pagehead-tabs-item:hover,.pagehead-tabs-item svg path {color: var(--colorFg);}
+.Box-row--gray {
+    background-color: var(--colorBgDarker);
+    border-top: initial;
+}
+.muted-link {color: var(--colorFgFaded) !important;}
+.muted-link:hover {color: var(--colorFg) !important;}
+.text-gray {color: var(--colorFg) !important;}
+.member-fullname {color: var(--colorFgFaded);}
+.member-row a:hover {color: var(--colorHl);}
 }
 
 @-moz-document domain("help.github.com") {
