@@ -1,4 +1,4 @@
-/* https://isabella-theme.github.io/Isabella/ */
+/* https://tiamarth.github.io/Isabella/ */
 @-moz-document domain("github.com") {
 body {
     --colorBlack: black;
@@ -23,6 +23,7 @@ body {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
 }
+.border {border-color: var(--colorBgDarker) !important;}
 .flash {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
@@ -175,6 +176,31 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
 .thread-subscription-status .text-gray {color: var(--colorFg) !important;}
 /* pull requests page */
 .border-gray-light {border-color: var(--colorAc) !important;}
+/* user profile */
+.user-profile-nav {
+    background-color: var(--colorAc);
+    border-bottom-color: var(--colorBgDarker);
+}
+.UnderlineNav-item.selected {border-bottom-color: var(--colorHl);}
+.UnderlineNav-item,.UnderlineNav-item.selected,.UnderlineNav-item .Counter,.UnderlineNav-item:focus,.UnderlineNav-item:hover {color: var(--colorFg);}
+.UnderlineNav-item:focus,.UnderlineNav-item:hover {border-bottom-color: var(--colorHlFaded);}
+.user-profile-sticky-bar:after {
+    background-color: var(--colorAc);
+    border-bottom-color: var(--colorAc);
+    box-shadow: initial;
+}
+.avatar-before-user-status {border-color: transparent;}
+.pinned-item-list-item {background-color: var(--colorBgDarker);}
+.js-yearly-contributions {
+    padding: 10px 20px;
+    background-color: var(--colorBgDarker);
+}
+.calendar-graph rect[fill="#ebedf0"],
+.contrib-legend li[style*="#ebedf0"] {
+    background-color: var(--colorAc);
+    fill: var(--colorAc);
+}
+.contrib-legend.text-gray > ul > li:nth-child(1) {background-color: var(--colorAc) !important;}
 /* organization profile */
 .orghead {
     color: var(--colorFg);
