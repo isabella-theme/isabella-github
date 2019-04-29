@@ -1,0 +1,165 @@
+/* https://tiamarth.github.io/Isabella/ */
+body {
+    --colorBlack: black;
+    --colorWhite: white;
+    --colorHl: #be4318;
+    --colorHlFaded: #b18879;
+    --colorHlFg: var(--colorWhite);
+    --colorBg: #333335;
+    --colorBgDarker: #232325;
+    --colorFg: #d1d1d1;
+    --colorFgBolded: white;
+    --colorFgFaded: #87878c;
+    --colorAc: #101013;
+    color: var(--colorFg);
+    background-color: var(--colorBg);
+}
+/* dashboard */
+a {color: var(--colorHl);}
+.btn-link {color: var(--colorHl);}
+.bg-white {background-color: var(--colorAc) !important;}
+.bg-gray {background-color: var(--colorBg) !important;}
+.border-top,.border-right,.border-bottom,.border-left {border-color: var(--colorAc) !important;}
+.Header {background: var(--colorAc) !important;}
+.dashboard-sidebar {background-color: var(--colorAc);}
+.form-control {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.mt-3 {margin-top: 0 !important;}
+body > div.application-main > div > div {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+#dashboard {
+    padding: 1% 3%;
+    background-color: var(--colorBg) !important;
+}
+.link-gray-dark {color: var(--colorHl) !important;}
+.link-gray-dark:hover {color: var(--colorFg) !important;}
+.text-gray-dark {color: var(--colorFg) !important;}
+.Box {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+#dashboard blockquote {color: var(--colorFg);}
+.branch-name {background-color: var(--colorAc);}
+a.branch-name {color: var(--colorHl);}
+aside.team-left-column {background-color: var(--colorBg);}
+.btn {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+    background-image: linear-gradient(-180deg,var(--colorBgDarker),var(--colorAc) 90%);
+    transition: 0.2s ease-in-out;
+}
+.btn.hover,.btn:hover {
+    background-color: var(--colorBg);
+    background-image: initial;
+}
+.btn.disabled,.btn:disabled {
+    color: var(--colorFgFaded);
+    background-color: var(--colorBgDarker);
+}
+/* repo page */
+.repohead {background-color: var(--colorAc) !important;}
+.reponav-item,.reponav-item.selected,.reponav-item:focus,.reponav-item:hover {color: var(--colorFg);}
+.reponav-item.selected {
+    padding-top: 10px;
+    background-color: var(--colorBg);
+    border: initial;
+}
+.reponav-item svg {color: var(--colorFg) !important;}
+.reponav-item .Counter {color: var(--colorFg);}
+.social-count {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    transition: 0.2s ease-in-out;
+}
+.social-count:hover {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+}
+.pagehead {border-bottom: initial;}
+.overall-summary {
+    background-color: var(--colorAc);
+    border-color: var(--colorAc) !important;
+}
+.numbers-summary .nolink,.numbers-summary a,.numbers-summary .text-emphasized {color: var(--colorHl);}
+.numbers-summary a:hover {color: var(--colorFg);}
+.repository-lang-stats-graph,
+.repository-lang-stats-graph .language-color:not(:first-child){
+    border-color: var(--colroAc);
+}
+.repository-lang-stats ol.repository-lang-stats-numbers li .lang {color: var(--colorFg);}
+.commit-tease {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
+.team-mention,.user-mention,.commit-tease-sha {color: var(--colorFgBolded);}
+.file-wrap {border-color: var(--colorAc);}
+table.files {background-color: var(--colorBgDarker);}
+table.files td {border-color: var(--colorAc);}
+table.files td.icon,table.files td.icon .octicon-file-directory {color: var(--colorFg);}
+table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {background-color: var(--colorBg);}
+.Box-header {
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
+.Box-body:last-of-type {border-color: var(--colorAc);}
+/* markdown */
+.markdown-body h1,.markdown-body h2,.markdown-body blockquote {border-color: var(--colorFgFaded);}
+/* issues page */
+.blankslate {background-color: var(--colorBgDarker);}
+.discussion-sidebar-heading {color: var(--colorFg);}
+.discussion-sidebar-item {color: var(--colorFgFaded);}
+.discussion-sidebar-item+.discussion-sidebar-item {border-top: 1px solid var(--colorAc);}
+.Box-row--focus-gray.navigation-focus {background-color: var(--colorBg);}
+.Box-row {border-color: var(--colorBg);}
+/* issues threads */
+.gh-header {background-color: var(--colorBg);}
+.gh-header-meta {border-color: var(--colorAc);}
+.discussion-timeline:before {display: none;}
+.timeline-comment-wrapper {
+    margin-bottom: 5px;
+    padding-left: 0;
+    border-top: initial;
+    border-bottom: initial;
+}
+.timeline-comment {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.timeline-comment-header {
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
+.timeline-comment-header .author {color: var(--colorFg) !important;}
+.pagination-loader-container {
+    background-color: var(--colorBg);
+    background-image: initial;
+}
+.discussion-timeline-actions {
+    background-color: var(--colorBg);
+    border-color: var(--colorBg);
+}
+.new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
+.tabnav-tab.selected {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorAc);
+}
+.input-contrast:focus {background-color: var(--colorAc);}
+.form-control:focus {border-color: var(--colorAc);}
+.form-control,.form-select {color: var(--colorFg);}
+.upload-enabled textarea {border: 1px dashed var(--colorAc);}
+.drag-and-drop {border: 1px solid var(--colorAc);}
+.drag-and-drop .bg-gray-light {background-color: var(--colorAc) !important;}
+.thread-subscription-status {background-color: var(--colorBg);}
+.thread-subscription-status .text-gray {color: var(--colorFg) !important;}
+/* pull requests page */
+.border-gray-light {border-color: var(--colorAc) !important;}
