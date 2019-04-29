@@ -23,6 +23,10 @@ body {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
 }
+.flash {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+}
 /* dashboard */
 a {color: var(--colorHl);}
 a:hover {color: var(--colorHl);}
