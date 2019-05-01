@@ -15,10 +15,26 @@ body {
     background-color: var(--colorBg);
 }
 a,a:hover {color: var(--colorHl);}
+.link-gray {color: var(--colorFgFaded) !important;}
+.link-gray-dark {color: var(--colorFg) !important;}
+.link-gray:hover,.link-gray-dark:hover {color: var(--colorHl) !important;}
 .bg-white {background-color: var(--colorAc) !important;}
 .bg-gray {background-color: var(--colorBg) !important;}
 .border,.border-top,.border-right,.border-bottom,.border-left {
     border-color: var(--colorBgDarker) !important;
+}
+.btn {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+    background-image: linear-gradient(-180deg,var(--colorBgDarker),var(--colorAc) 90%);
+}
+.btn.hover,.btn:hover {
+    background-color: var(--colorBg);
+    background-image: initial;
+}
+.btn.disabled,.btn:disabled {
+    color: var(--colorFgFaded);
+    background-color: var(--colorBgDarker);
 }
 .Header {background-color: var(--colorAc);}
 .jump-to-suggestions-results-container .navigation-item {
@@ -31,6 +47,8 @@ a,a:hover {color: var(--colorHl);}
 }
 .Box,.Box-row {border-color: var(--colorBgDarker);}
 .Box {background-color: var(--colorBgDarker);}
+a.branch-name {color: var(--colorFg);}
+.branch-name {background-color: var(--colorAc);}
 .select-menu-modal {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
