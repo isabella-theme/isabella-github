@@ -24,3 +24,41 @@ a,a:hover {color: var(--colorHl);}
 .Header {background-color: var(--colorAc);}
 .Box,.Box-row {border-color: var(--colorBgDarker);}
 .Box {background-color: var(--colorBgDarker);}
+.select-menu-modal {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    box-shadow: initial;
+}
+.select-menu-item {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBg);
+}
+.select-menu-action {color: var(--colorFg);}
+.select-menu-divider,.select-menu-header {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBg);
+}
+.select-menu-divider,.select-menu-header .select-menu-title {
+    color: var(--colorFg);
+}
+.select-menu-item.selected,details-menu .select-menu-item[aria-checked=true],
+details-menu .select-menu-item[aria-selected=true] {
+    color: var(--colorFg);
+}
+.select-menu-item.navigation-focus,
+.select-menu-item.navigation-focus .description-inline,
+.select-menu-item.navigation-focus.select-menu-action,
+.select-menu-item.navigation-focus.selected,.select-menu-item:focus,
+.select-menu-item:focus .description-inline,
+.select-menu-item:focus.select-menu-action,.select-menu-item:focus.selected,
+.select-menu-item:hover,.select-menu-item:hover .description-inline,
+.select-menu-item:hover.select-menu-action,.select-menu-item:hover.selected,
+.select-menu-item[aria-checked=true]:focus,
+.select-menu-item[aria-checked=true]:hover,
+.select-menu-item[aria-selected=true] .description-inline,
+.select-menu-item[aria-selected=true].select-menu-action,
+.select-menu-item[aria-selected=true]:focus,
+.select-menu-item[aria-selected=true]:hover {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+}
