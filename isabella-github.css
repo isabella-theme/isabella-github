@@ -10,14 +10,19 @@ body {
     --colorFg: #d1d1d1;
     --colorFgBolded: white;
     --colorFgFaded: #87878c;
+    --colorFgFadedMore: #68686c;
     --colorAc: #101013;
     color: var(--colorFg);
     background-color: var(--colorBg);
 }
 a,a:hover {color: var(--colorHl);}
+.muted-link {color: var(--colorFgFadedMore) !important;}
 .link-gray {color: var(--colorFgFaded) !important;}
-.link-gray-dark {color: var(--colorFg) !important;}
-.link-gray:hover,.link-gray-dark:hover {color: var(--colorHl) !important;}
+.link-gray-dark {color: var(--colorFgBolded) !important;}
+.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--colorHl) !important;}
+.text-gray {color: var(--colorFgFaded) !important;}
+.text-gray-light {color: var(--colorFgFadedMore) !important;}
+.text-gray-dark {color: var(--colorFgBolded) !important;}
 .bg-white {background-color: var(--colorAc) !important;}
 .bg-gray {background-color: var(--colorBg) !important;}
 .border,.border-top,.border-right,.border-bottom,.border-left {
@@ -96,3 +101,4 @@ details-menu .select-menu-item[aria-selected=true] {
     border-color: var(--colorHl);
     box-shadow: inherit;
 }
+.news div.message,.news li blockquote {color: var(--colorFgFaded);}
