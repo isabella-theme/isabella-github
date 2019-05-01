@@ -14,9 +14,13 @@ body {
     color: var(--colorFg);
     background-color: var(--colorBg);
 }
-.Header {background-color: var(--colorAc);}
+a,a:hover {color: var(--colorHl);}
 .bg-white {background-color: var(--colorAc) !important;}
+.bg-gray {background-color: var(--colorBg) !important;}
 .border-top {border-color: var(--colorBgDarker) !important;}
 .border-right {border-color: var(--colorBgDarker) !important;}
 .border-bottom {border-color: var(--colorBgDarker) !important;}
 .border-left {border-color: var(--colorBgDarker) !important;}
+.Header {background-color: var(--colorAc);}
+.Box,.Box-row {border-color: var(--colorBgDarker);}
+.Box {background-color: var(--colorBgDarker);}
