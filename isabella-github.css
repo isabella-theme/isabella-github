@@ -17,11 +17,18 @@ body {
 a,a:hover {color: var(--colorHl);}
 .bg-white {background-color: var(--colorAc) !important;}
 .bg-gray {background-color: var(--colorBg) !important;}
-.border-top {border-color: var(--colorBgDarker) !important;}
-.border-right {border-color: var(--colorBgDarker) !important;}
-.border-bottom {border-color: var(--colorBgDarker) !important;}
-.border-left {border-color: var(--colorBgDarker) !important;}
+.border,.border-top,.border-right,.border-bottom,.border-left {
+    border-color: var(--colorBgDarker) !important;
+}
 .Header {background-color: var(--colorAc);}
+.jump-to-suggestions-results-container .navigation-item {
+    border-color: var(--colorBg);
+}
+.jump-to-suggestions-path {color: var(--colorFg);}
+.jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path,
+.jump-to-suggestions-results-container [aria-selected=true] .jump-to-suggestions-path {
+    background-color: var(--colorHl);
+}
 .Box,.Box-row {border-color: var(--colorBgDarker);}
 .Box {background-color: var(--colorBgDarker);}
 .select-menu-modal {
@@ -61,4 +68,13 @@ details-menu .select-menu-item[aria-selected=true] {
 .select-menu-item[aria-selected=true]:hover {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
+}
+.form-control,.form-select {
+    color: var(--colorFg);
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.form-control.focus,.form-control:focus,.form-select.focus,.form-select:focus {
+    border-color: var(--colorHl);
+    box-shadow: inherit;
 }
