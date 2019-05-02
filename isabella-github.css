@@ -1,8 +1,15 @@
 @-moz-document domain("github.com") {
 /* https://isabella-theme.github.io/ */
 body {
-    --colorBlack: black;
-    --colorWhite: white;
+    --colorBlack: #101013;
+    --colorBlue: #6bc6ef;
+    --colorGreen: #77dd77;
+    --colorPink: #f772ad;
+    --colorPurple: #b19cd9;
+    --colorRed: #be2a18;
+    --colorWhite: #f7f7f7;
+    --colorYellow: #fdfd96;
+    --colorComment: #69696d;
     --colorHl: #be4318;
     --colorHlFaded: #b18879;
     --colorHlFg: var(--colorWhite);
@@ -32,6 +39,7 @@ a.branch-name {color: var(--colorFg);}
 .text-gray-dark {color: var(--colorFgBolded) !important;}
 .text-emphasized {color: var(--colorFgBolded);}
 .bg-white {background-color: var(--colorAc) !important;}
+.bg-blue-light {background-color: var(--colorAc) !important;}
 .bg-gray {background-color: var(--colorBg) !important;}
 .border,.border-top,.border-right,.border-bottom,.border-left {
     border-color: var(--colorBgDarker) !important;
@@ -130,6 +138,10 @@ a.branch-name {color: var(--colorFg);}
     border-color: var(--colorAc);
 }
 .commit-tease-sha {color: var(--colorFgBolded);}
+.ellipsis-expander:hover,.hidden-text-expander a:hover {
+    background-color: var(--colorBgFaded);
+}
+.commit-desc pre {color: var(--colorFgFaded);}
 .team-mention,.user-mention {color: var(--colorFg);}
 .file-wrap {border-color: var(--colorAc);}
 table.files td.icon .octicon-file-directory,table.files td.icon {
@@ -144,6 +156,25 @@ table.files td.message a.link-gray {color: var(--colorFg) !important;}
 table.files td.message a.link-gray:hover {color: var(--colorHl) !important;}
 table.files tr.navigation-focus td,table.files tr[aria-selected=true] td {
     background-color: var(--colorBgFaded);
+}
+table.files tr.up-tree a:hover {background-color: var(--colorBgFaded);}
+/* repo code */
+.breadcrumb,.breadcrumb strong.final-path {color: var(--colorFg);}
+.blob-num {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+}
+.blob-num:hover {color: var(--colorFgFaded);}
+.blob-code-inner {color: var(--colorWhite);}
+td.blob-code-inner:hover {background-color: var(--colorBgFaded);}
+.pl-smw,.pl-v {color: var(--colorBlue);}
+.pl-c1,.pl-s .pl-v {color: var(--colorPurple);}
+.pl-e,.pl-en {color: var(--colorGreen);}
+.pl-ent,.pl-k {color: var(--colorPink);}
+.pl-c {color: var(--colorComment);}
+.pl-pds,.pl-s,.pl-s .pl-pse .pl-s1,.pl-sr,.pl-sr .pl-cce,.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+    color: var(--colorYellow);
 }
 /* repo issues */
 .table-list-header-toggle .btn-link {color: var(--colorFg);}
@@ -191,7 +222,11 @@ table.files tr.navigation-focus td,table.files tr[aria-selected=true] td {
 .discussion-item-header {color: var(--colorFgFaded);}
 .timeline-commits .commit-message>code a {color: var(--colorFg);}
 .timeline-commits .commit-message>code a:hover {color: var(--colorHl);}
+.commit-id {color: var(--colorFg);}
+.commit-id:hover {color: var(--colorHl);}
 .discussion-sidebar-heading {color: var(--colorFg);}
+.discussion-sidebar-toggle:hover {color: var(--colorHl);}
+.discussion-sidebar-item {color: var(--colorFgFaded);}
 /* repo labels */
 .labels-list-action {color: var(--colorFg);}
 .label-description.text-gray {color: var(--colorFg) !important;}
@@ -262,6 +297,8 @@ input::placeholder {color: var(--colorFg);}
     background-color: var(--colorAc);
     background-image: linear-gradient(-180deg,var(--colorBgDarker),var(--colorAc) 90%);
 }
+.btn-octicon {color: var(--colorFg);}
+.btn-octicon:hover {color: var(--colorHl);}
 .btn.hover,.btn:hover {
     background-color: var(--colorBg);
     background-image: initial;
