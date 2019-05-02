@@ -47,6 +47,10 @@ a.branch-name {color: var(--colorFg);}
     background-color: var(--colorHl);
 }
 /* content */
+.flash {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+}
 .Box-header {
     background-color: var(--colorAc);
     border-color: var(--colorAc);
