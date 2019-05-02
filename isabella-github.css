@@ -1,3 +1,4 @@
+@-moz-document domain("github.com") {
 /* https://isabella-theme.github.io/ */
 body {
     --colorBlack: black;
@@ -23,7 +24,7 @@ a.branch-name {color: var(--colorFg);}
 .muted-link {color: var(--colorFgFadedMore) !important;}
 .link-gray {color: var(--colorFgFaded) !important;}
 .link-gray-dark {color: var(--colorFgBolded) !important;}
-a:hover,.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--colorHl) !important;}
+.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--colorHl) !important;}
 .text-gray {color: var(--colorFgFaded) !important;}
 .text-gray-light {color: var(--colorFgFadedMore) !important;}
 .text-gray-dark {color: var(--colorFgBolded) !important;}
@@ -52,7 +53,16 @@ a:hover,.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--c
 .Box,.Box-row {border-color: var(--colorBgDarker);}
 .Box {background-color: var(--colorBgDarker);}
 .Box-body {border-color: var(--colorBgDarker);}
+.blankslate {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
 .news div.message,.news li blockquote {color: var(--colorFgFaded);}
+.table-list-header {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.table-list-header-meta {color: var(--colorFg);}
 .table-list-bordered,.table-list-bordered {
     color: var(--colorFg);
     border-color: var(--colorBgDarker);
@@ -74,7 +84,7 @@ a:hover,.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--c
     border-color: var(--colorHl) var(--colorBg) var(--colorBg);
 }
 .reponav-item,.reponav-item .octicon,.reponav-item .Counter {color: var(--colorFg);}
-.reponav-item:hover,.reponav-item:hover .octicon,.reponav-item:hover .Counter {color: var(--colorFgFaded);}
+.reponav-item:focus,.reponav-item:focus .octicon,.reponav-item:focus .Counter,.reponav-item:hover,.reponav-item:hover .octicon,.reponav-item:hover .Counter {color: var(--colorFgFaded);}
 /* repo home */
 .topic-tag {background-color: var(--colorBgDarker);}
 .topic-tag:hover {background-color: var(--colorAc);}
@@ -101,6 +111,25 @@ table.files td.message,table.files td.age {color: var(--colorFg);}
 table.files td.message a.link-gray {color: var(--colorFg) !important;}
 table.files td.message a.link-gray:hover {color: var(--colorHl) !important;}
 table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {background-color: var(--colorBgFaded);}
+/* repo issues */
+.table-list-header-toggle .btn-link {color: var(--colorFg);}
+.table-list-header-toggle .btn-link:hover {color: var(--colorFgBolded);}
+.table-list-header-toggle .btn-link.selected,.table-list-header-toggle .btn-link.selected:hover {color: var(--colorFgBolded);}
+/* repo labels */
+.labels-list-action {color: var(--colorFg);}
+.label-description.text-gray {color: var(--colorFg) !important;}
+/* repo wiki */
+.gh-header {background-color: var(--colorBg);}
+.new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.tabnav-tab.selected {color: var(--colorFg);}
+.tabnav-tab.selected {
+    background-color: var(--colorBg);
+    border-color: var(--colorBg);
+}
+.tabnav-tab:focus,.tabnav-tab:hover {color: var(--colorFgBolded);}
 /* markdown */
 .markdown-body h1,.markdown-body h2 {border-color: var(--colorBgFaded);}
 /* commits */
@@ -139,6 +168,12 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
     background-color: var(--colorBgDarker);
 }
 .btn-outline.selected, .btn-outline:active, .btn-outline:hover, [open]>.btn-outline {border-color: var(--colorHl);}
+.subnav-search-context .btn {color: var(--colorFg);}
+.subnav-item {
+    color: var(--colorFg);
+    border-color: var(--colorAc);
+}
+.subnav-item:focus,.subnav-item:hover {background-color: var(--colorBgDarker);}
 .select-menu-modal {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
@@ -185,4 +220,13 @@ details-menu .select-menu-item[aria-selected=true] {
 .form-control.focus,.form-control:focus,.form-select.focus,.form-select:focus {
     border-color: var(--colorHl);
     box-shadow: inherit;
+}
+}
+
+@-moz-document domain("help.github.com") {
+/* help.github.com */
+body > div:nth-child(1) {background-color: var(--colorAc) !important;}
+.text-blue-mktg {color: var(--colorHl) !important;}
+body > div:nth-child(1) .width-full .py-2.py-md-0.d-md-inline-block details summary svg {stroke: var(--colorHl) !important;}
+.markdown-body .highlight pre,.markdown-body pre {background-color: var(--colorAc);}
 }
