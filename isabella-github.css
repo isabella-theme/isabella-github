@@ -380,7 +380,15 @@ details-menu .select-menu-item[aria-selected=true] {
     border-color: var(--colorHl);
     box-shadow: inherit;
 }
+}
 
+@-moz-document domain("raw.githubusercontent.com") {
+/* raw.githubusercontent.com */
+body {
+    /* doesn't accept variables for some reason */
+    color: #d1d1d1;
+    background-color: #232325;
+}
 }
 
 @-moz-document domain("help.github.com") {
