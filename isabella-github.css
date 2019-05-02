@@ -10,6 +10,8 @@ body {
     --colorWhite: #f7f7f7;
     --colorYellow: #fdfd96;
     --colorComment: #69696d;
+    --colorAddition: #004700bd;
+    --colorDeletion: #830d0dcc;
     --colorHl: #be4318;
     --colorHlFaded: #b18879;
     --colorHlFg: var(--colorWhite);
@@ -31,6 +33,7 @@ a.branch-name {color: var(--colorFg);}
 .muted-link {color: var(--colorFgFadedMore) !important;}
 .link-gray {color: var(--colorFgFaded) !important;}
 .link-gray-dark {color: var(--colorFgBolded) !important;}
+.link-hover-blue:hover {color: var(--colorHl) !important;}
 .muted-link:hover,.link-gray:hover,.link-gray-dark:hover {
     color: var(--colorHl) !important;
 }
@@ -175,6 +178,36 @@ td.blob-code-inner:hover {background-color: var(--colorBgFaded);}
 .pl-pds,.pl-s,.pl-s .pl-pse .pl-s1,.pl-sr,.pl-sr .pl-cce,.pl-sr .pl-sra,
 .pl-sr .pl-sre {
     color: var(--colorYellow);
+}
+.pl-mi {color: var(--colorWhite);}
+/* repo code commits compare changes */
+.range-editor {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgDarker);
+}
+.range-editor-icon {color: var(--colorFg);}
+.file {border-color: var(--colorBgDarker);}
+.file-header {
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
+.blob-num-expandable .directional-expander {color: var(--colorFg);}
+.blob-num-expandable .diff-expander:hover,
+.blob-num-expandable .directional-expander:hover {
+    color: var(--colorHlFg);
+    background-color: var(--colorHl);
+}
+.blob-expanded .blob-code, .blob-expanded .blob-num {
+    background-color: var(--colorBgFaded);
+}
+.blob-code-hunk {background-color: var(--colorBgFaded);}
+.blob-code-addition {background-color: var(--colorAddition);}
+.blob-code-deletion {background-color: var(--colorDeletion);}
+.blob-expanded+tr:not(.blob-expanded) .blob-code,
+.blob-expanded+tr:not(.blob-expanded) .blob-num,
+tr:not(.blob-expanded)+.blob-expanded .blob-code,
+tr:not(.blob-expanded)+.blob-expanded .blob-num {
+    border-color: var(--colorAc);
 }
 /* repo issues */
 .table-list-header-toggle .btn-link {color: var(--colorFg);}
