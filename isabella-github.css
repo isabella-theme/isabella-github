@@ -1,4 +1,4 @@
-/* https://isabella-theme.github.io/Isabella/ */
+/* https://isabella-theme.github.io/ */
 body {
     --colorBlack: black;
     --colorWhite: white;
@@ -7,6 +7,7 @@ body {
     --colorHlFg: var(--colorWhite);
     --colorBg: #333335;
     --colorBgDarker: #232325;
+    --colorBgFaded: #444445e8;
     --colorFg: #d1d1d1;
     --colorFgBolded: white;
     --colorFgFaded: #87878c;
@@ -64,6 +65,23 @@ a.branch-name {color: var(--colorFg);}
 .Box,.Box-row {border-color: var(--colorBgDarker);}
 .Box {background-color: var(--colorBgDarker);}
 .news div.message,.news li blockquote {color: var(--colorFgFaded);}
+.table-list-bordered,.table-list-bordered {
+    color: var(--colorFg);
+    border-color: var(--colorBgDarker);
+}
+/* commits */
+.commit-group-title {color: var(--colorFg);}
+.commit-group-title .octicon-git-commit {
+    color: var(--colorAc);
+    background-color: transparent;
+}
+.commits-listing:before {background-color: var(--colorBgDarker);}
+.table-list-bordered .table-list-cell:first-child,.table-list-bordered .table-list-cell:last-child {border-color: var(--colorAc);}
+.commits-list-item.navigation-focus, .commits-list-item[aria-selected=true] {
+    background-color: var(--colorBgFaded);
+}
+.commit .commit-title, .commit .commit-title a {color: var(--colorFg);}
+.commits-list-item .commit-author,.commits-list-item .commit-meta {color: var(--colorFgFaded);}
 /* menus and forms */
 .btn {
     color: var(--colorFg);
@@ -78,6 +96,7 @@ a.branch-name {color: var(--colorFg);}
     color: var(--colorFgFaded);
     background-color: var(--colorBgDarker);
 }
+.btn-outline.selected, .btn-outline:active, .btn-outline:hover, [open]>.btn-outline {border-color: var(--colorHl);}
 .select-menu-modal {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
