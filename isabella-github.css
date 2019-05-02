@@ -1,4 +1,3 @@
-@-moz-document domain("github.com") {
 /* https://isabella-theme.github.io/ */
 body {
     --colorBlack: black;
@@ -53,6 +52,7 @@ a.branch-name {color: var(--colorFg);}
 .Box,.Box-row {border-color: var(--colorBgDarker);}
 .Box {background-color: var(--colorBgDarker);}
 .Box-body {border-color: var(--colorBgDarker);}
+.Box-row--focus-gray.navigation-focus {background-color: var(--colorBgFaded);}
 .blankslate {
     background-color: var(--colorBgDarker);
     border-color: var(--colorBgDarker);
@@ -65,6 +65,10 @@ a.branch-name {color: var(--colorFg);}
 .table-list-header-meta {color: var(--colorFg);}
 .table-list-bordered,.table-list-bordered {
     color: var(--colorFg);
+    border-color: var(--colorBgDarker);
+}
+.filter-bar {
+    background-color: var(--colorBgDarker);
     border-color: var(--colorBgDarker);
 }
 /* repo top */
@@ -83,16 +87,30 @@ a.branch-name {color: var(--colorFg);}
     background-color: var(--colorBg);
     border-color: var(--colorHl) var(--colorBg) var(--colorBg);
 }
-.reponav-item,.reponav-item .octicon,.reponav-item .Counter {color: var(--colorFg);}
-.reponav-item:focus,.reponav-item:focus .octicon,.reponav-item:focus .Counter,.reponav-item:hover,.reponav-item:hover .octicon,.reponav-item:hover .Counter {color: var(--colorFgFaded);}
+.reponav-item,.reponav-item .octicon,.reponav-item .Counter {
+    color: var(--colorFg);
+}
+.reponav-item:focus,.reponav-item:focus .octicon,.reponav-item:focus .Counter,
+.reponav-item:hover,.reponav-item:hover .octicon,.reponav-item:hover .Counter {
+    color: var(--colorFgFaded);
+}
 /* repo home */
 .topic-tag {background-color: var(--colorBgDarker);}
 .topic-tag:hover {background-color: var(--colorAc);}
 .overall-summary {border-color: var(--colorAc);}
-.numbers-summary .nolink,.numbers-summary a,.numbers-summary .octicon {color: var(--colorFg);}
-.numbers-summary a:hover,.numbers-summary a:hover .octicon {color: var(--colorHl);}
-.repository-lang-stats ol.repository-lang-stats-numbers li .lang {color: var(--colorFgBolded);}
-.repository-lang-stats ol.repository-lang-stats-numbers li>a, .repository-lang-stats ol.repository-lang-stats-numbers li>span {color: var(--colorFg);}
+.numbers-summary .nolink,.numbers-summary a,.numbers-summary .octicon {
+    color: var(--colorFg);
+}
+.numbers-summary a:hover,.numbers-summary a:hover .octicon {
+    color: var(--colorHl);
+}
+.repository-lang-stats ol.repository-lang-stats-numbers li .lang {
+    color: var(--colorFgBolded);
+}
+.repository-lang-stats ol.repository-lang-stats-numbers li>a,
+.repository-lang-stats ol.repository-lang-stats-numbers li>span {
+    color: var(--colorFg);
+}
 .repository-lang-stats-graph {border-color: var(--colorAc);}
 .commit-tease {
     color: var(--colorFg);
@@ -110,16 +128,25 @@ table.files,table.files td {
 table.files td.message,table.files td.age {color: var(--colorFg);}
 table.files td.message a.link-gray {color: var(--colorFg) !important;}
 table.files td.message a.link-gray:hover {color: var(--colorHl) !important;}
-table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {background-color: var(--colorBgFaded);}
+table.files tr.navigation-focus td,table.files tr[aria-selected=true] td {
+    background-color: var(--colorBgFaded);
+}
 /* repo issues */
 .table-list-header-toggle .btn-link {color: var(--colorFg);}
 .table-list-header-toggle .btn-link:hover {color: var(--colorFgBolded);}
-.table-list-header-toggle .btn-link.selected,.table-list-header-toggle .btn-link.selected:hover {color: var(--colorFgBolded);}
+.table-list-header-toggle .btn-link.selected,
+.table-list-header-toggle .btn-link.selected:hover {
+    color: var(--colorFgBolded);
+}
 /* repo labels */
 .labels-list-action {color: var(--colorFg);}
 .label-description.text-gray {color: var(--colorFg) !important;}
 /* repo wiki */
 .gh-header {background-color: var(--colorBg);}
+.gh-header-meta {
+    color: var(--colorFg);
+    border-color: var(--colorAc);
+}
 .new-discussion-timeline .previewable-comment-form .comment-form-head.tabnav {
     background-color: var(--colorBgDarker);
     border-color: var(--colorBgDarker);
@@ -139,17 +166,23 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
     background-color: transparent;
 }
 .commits-listing:before {background-color: var(--colorBgDarker);}
-.table-list-bordered .table-list-cell:first-child,.table-list-bordered .table-list-cell:last-child {border-color: var(--colorAc);}
-.commits-list-item.navigation-focus, .commits-list-item[aria-selected=true] {
+.table-list-bordered .table-list-cell:first-child,
+.table-list-bordered .table-list-cell:last-child {
+    border-color: var(--colorAc);
+}
+.commits-list-item.navigation-focus,.commits-list-item[aria-selected=true] {
     background-color: var(--colorBgFaded);
 }
 .commit .commit-title,.commit .commit-title a {color: var(--colorFg);}
 .commit .commit-title .issue-link {color: var(--colorHl);}
 .commits-list-item .commit-desc pre {color: var(--colorFg);}
-.commits-list-item .commit-author,.commits-list-item .commit-meta {color: var(--colorFgFaded);}
+.commits-list-item .commit-author,.commits-list-item .commit-meta {
+    color: var(--colorFgFaded);
+}
 .signed-commit-badge {border-color: var(--colorAc);}
-/* menus, buttons, and forms */
-.ellipsis-expander, .hidden-text-expander a {
+/* menus,buttons,and forms */
+input::placeholder {color: var(--colorFg);}
+.ellipsis-expander,.hidden-text-expander a {
     color: var(--colorFg);
     background-color: var(--colorAc);
 }
@@ -163,11 +196,13 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
     background-color: var(--colorBg);
     background-image: initial;
 }
-.btn.disabled,.btn:disabled,.btn.selected, .btn:active, [open]>.btn {
+.btn.disabled,.btn:disabled,.btn.selected,.btn:active,[open]>.btn {
     color: var(--colorFgFaded);
     background-color: var(--colorBgDarker);
 }
-.btn-outline.selected, .btn-outline:active, .btn-outline:hover, [open]>.btn-outline {border-color: var(--colorHl);}
+.btn-outline.selected,.btn-outline:active,.btn-outline:hover,[open]>.btn-outline {
+    border-color: var(--colorHl);
+}
 .subnav-search-context .btn {color: var(--colorFg);}
 .subnav-item {
     color: var(--colorFg);
@@ -179,6 +214,11 @@ table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {backg
     background-color: var(--colorBgDarker);
     box-shadow: initial;
 }
+.select-menu-filters {background-color: var(--colorBgDarker);}
+.select-menu-text-filter:first-child:last-child {
+    border-color: var(--colorBgDarker);
+}
+.select-menu-text-filter input {border-color: var(--colorAc);}
 .select-menu-item {
     background-color: var(--colorBgDarker);
     border-color: var(--colorBg);
@@ -220,13 +260,4 @@ details-menu .select-menu-item[aria-selected=true] {
 .form-control.focus,.form-control:focus,.form-select.focus,.form-select:focus {
     border-color: var(--colorHl);
     box-shadow: inherit;
-}
-}
-
-@-moz-document domain("help.github.com") {
-/* help.github.com */
-body > div:nth-child(1) {background-color: var(--colorAc) !important;}
-.text-blue-mktg {color: var(--colorHl) !important;}
-body > div:nth-child(1) .width-full .py-2.py-md-0.d-md-inline-block details summary svg {stroke: var(--colorHl) !important;}
-.markdown-body .highlight pre,.markdown-body pre {background-color: var(--colorAc);}
 }
