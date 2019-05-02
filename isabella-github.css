@@ -78,6 +78,11 @@ a.branch-name {color: var(--colorFg);}
     background-color: var(--colorBgDarker);
     border-color: var(--colorBgDarker);
 }
+/* markdown */
+.markdown-body h1,.markdown-body h2 {border-color: var(--colorBgFaded);}
+.markdown-body table tr {background-color: var(--colorBg);}
+.markdown-body table td,.markdown-body table th {border-color: var(--colorAc);}
+.markdown-body table tr:nth-child(2n) {background-color: var(--colorBgFaded);}
 /* repo top */
 .repohead h1,.repohead h1 .octicon {color: var(--colorFg);}
 .pagehead-actions>li {color: var(--colorFg);}
@@ -127,7 +132,9 @@ a.branch-name {color: var(--colorFg);}
 .commit-tease-sha {color: var(--colorFgBolded);}
 .team-mention,.user-mention {color: var(--colorFg);}
 .file-wrap {border-color: var(--colorAc);}
-table.files td.icon {color: var(--colorFg);}
+table.files td.icon .octicon-file-directory,table.files td.icon {
+    color: var(--colorFg);
+}
 table.files,table.files td {
     background-color: var(--colorBgDarker);
     border-color: var(--colorBgFaded);
@@ -145,6 +152,46 @@ table.files tr.navigation-focus td,table.files tr[aria-selected=true] td {
 .table-list-header-toggle .btn-link.selected:hover {
     color: var(--colorFgBolded);
 }
+/* issues threads */
+.discussion-timeline:before {background-color: var(--colorBgDarker);}
+.timeline-comment {background-color: var(--colorBgDarker);}
+.timeline-comment-wrapper,.timeline-comment.current-user {
+    border-color: var(--colorBgDarker);
+    border-top: initial;
+    border-bottom: initial;
+}
+.timeline-comment-wrapper .timeline-comment.current-user:after,
+.timeline-comment-wrapper .timeline-comment.current-user:before {
+    border-right-color: var(--colorAc);
+}
+.timeline-comment.current-user .timeline-comment-header {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
+.timeline-comment.current-user .timeline-comment-label {
+    color: var(--colorFgFaded);
+    border-color: var(--colorBg);
+}
+.timeline-comment-action {color: var(--colorFg);}
+.timeline-comment-action:focus,.timeline-comment-action:hover {
+    color: var(--colorHl);
+}
+.commit-icon .octicon {background-color: var(--colorBg);}
+.commit-icon {color: var(--colorFg);}
+.discussion-item-icon {
+    color: var(--colorFg);
+    background-color: var(--colorBg);
+    border-color: var(--colorBgDarker);
+}
+.discussion-item+.discussion-item,.discussion-item-review+.discussion-item {
+    border-color: var(--colorBgDarker);
+}
+.discussion-item .author {color: var(--colorFg) !important;}
+.discussion-item-header {color: var(--colorFgFaded);}
+.timeline-commits .commit-message>code a {color: var(--colorFg);}
+.timeline-commits .commit-message>code a:hover {color: var(--colorHl);}
+.discussion-sidebar-heading {color: var(--colorFg);}
 /* repo labels */
 .labels-list-action {color: var(--colorFg);}
 .label-description.text-gray {color: var(--colorFg) !important;}
@@ -182,8 +229,6 @@ table.files tr.navigation-focus td,table.files tr[aria-selected=true] td {
 .community-checklist .progress-bar {
     background: linear-gradient(90deg,var(--colorHl),#c5e300,#28a745);
 }
-/* markdown */
-.markdown-body h1,.markdown-body h2 {border-color: var(--colorBgFaded);}
 /* commits */
 .commit-group-title {color: var(--colorFg);}
 .commit-group-title .octicon-git-commit {
