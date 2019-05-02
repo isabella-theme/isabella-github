@@ -15,7 +15,10 @@ body {
     color: var(--colorFg);
     background-color: var(--colorBg);
 }
+/* global */
 a,a:hover {color: var(--colorHl);}
+a.branch-name {color: var(--colorFg);}
+.branch-name {background-color: var(--colorAc);}
 .muted-link {color: var(--colorFgFadedMore) !important;}
 .link-gray {color: var(--colorFgFaded) !important;}
 .link-gray-dark {color: var(--colorFgBolded) !important;}
@@ -28,6 +31,40 @@ a,a:hover {color: var(--colorHl);}
 .border,.border-top,.border-right,.border-bottom,.border-left {
     border-color: var(--colorBgDarker) !important;
 }
+/* github nav bar */
+.Header {background-color: var(--colorAc);}
+.jump-to-field-active {color: var(--colorFg) !important;}
+.jump-to-suggestions-results-container .navigation-item {
+    border-color: var(--colorBg);
+}
+.jump-to-suggestions-path {color: var(--colorFg);}
+.jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path,
+.jump-to-suggestions-results-container [aria-selected=true] .jump-to-suggestions-path {
+    background-color: var(--colorHl);
+}
+/* repo top */
+.repohead h1,.repohead h1 .octicon {color: var(--colorFg);}
+.pagehead-actions>li {color: var(--colorFg);}
+.social-count {
+    color: var(--colorFg);
+    background-color: var(--colorBg);
+}
+.social-count:hover {color: var(--colorHl);}
+/* repo nav */
+.repohead.experiment-repo-nav {background-color: var(--colorAc);}
+.pagehead {border-color: var(--colorAc);}
+.reponav-item.selected {
+    color: var(--colorFg);
+    background-color: var(--colorBg);
+    border-color: var(--colorHl) var(--colorBg) var(--colorBg);
+}
+.reponav-item,.reponav-item .octicon,.reponav-item .Counter {color: var(--colorFg);}
+.reponav-item:hover,.reponav-item:hover .octicon,.reponav-item:hover .Counter {color: var(--colorFgFaded);}
+/* content */
+.Box,.Box-row {border-color: var(--colorBgDarker);}
+.Box {background-color: var(--colorBgDarker);}
+.news div.message,.news li blockquote {color: var(--colorFgFaded);}
+/* menus and forms */
 .btn {
     color: var(--colorFg);
     background-color: var(--colorAc);
@@ -37,23 +74,10 @@ a,a:hover {color: var(--colorHl);}
     background-color: var(--colorBg);
     background-image: initial;
 }
-.btn.disabled,.btn:disabled {
+.btn.disabled,.btn:disabled,.btn.selected, .btn:active, [open]>.btn {
     color: var(--colorFgFaded);
     background-color: var(--colorBgDarker);
 }
-.Header {background-color: var(--colorAc);}
-.jump-to-suggestions-results-container .navigation-item {
-    border-color: var(--colorBg);
-}
-.jump-to-suggestions-path {color: var(--colorFg);}
-.jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path,
-.jump-to-suggestions-results-container [aria-selected=true] .jump-to-suggestions-path {
-    background-color: var(--colorHl);
-}
-.Box,.Box-row {border-color: var(--colorBgDarker);}
-.Box {background-color: var(--colorBgDarker);}
-a.branch-name {color: var(--colorFg);}
-.branch-name {background-color: var(--colorAc);}
 .select-menu-modal {
     color: var(--colorFg);
     background-color: var(--colorBgDarker);
@@ -101,4 +125,3 @@ details-menu .select-menu-item[aria-selected=true] {
     border-color: var(--colorHl);
     box-shadow: inherit;
 }
-.news div.message,.news li blockquote {color: var(--colorFgFaded);}
