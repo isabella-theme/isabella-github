@@ -45,8 +45,13 @@ a:hover,.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--c
     background-color: var(--colorHl);
 }
 /* content */
+.Box-header {
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
 .Box,.Box-row {border-color: var(--colorBgDarker);}
 .Box {background-color: var(--colorBgDarker);}
+.Box-body {border-color: var(--colorBgDarker);}
 .news div.message,.news li blockquote {color: var(--colorFgFaded);}
 .table-list-bordered,.table-list-bordered {
     color: var(--colorFg);
@@ -76,6 +81,28 @@ a:hover,.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--c
 .overall-summary {border-color: var(--colorAc);}
 .numbers-summary .nolink,.numbers-summary a,.numbers-summary .octicon {color: var(--colorFg);}
 .numbers-summary a:hover,.numbers-summary a:hover .octicon {color: var(--colorHl);}
+.repository-lang-stats ol.repository-lang-stats-numbers li .lang {color: var(--colorFgBolded);}
+.repository-lang-stats ol.repository-lang-stats-numbers li>a, .repository-lang-stats ol.repository-lang-stats-numbers li>span {color: var(--colorFg);}
+.repository-lang-stats-graph {border-color: var(--colorAc);}
+.commit-tease {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+    border-color: var(--colorAc);
+}
+.commit-tease-sha {color: var(--colorFgBolded);}
+.team-mention,.user-mention {color: var(--colorFg);}
+.file-wrap {border-color: var(--colorAc);}
+table.files td.icon {color: var(--colorFg);}
+table.files,table.files td {
+    background-color: var(--colorBgDarker);
+    border-color: var(--colorBgFaded);
+}
+table.files td.message,table.files td.age {color: var(--colorFg);}
+table.files td.message a.link-gray {color: var(--colorFg) !important;}
+table.files td.message a.link-gray:hover {color: var(--colorHl) !important;}
+table.files tr.navigation-focus td, table.files tr[aria-selected=true] td {background-color: var(--colorBgFaded);}
+/* markdown */
+.markdown-body h1,.markdown-body h2 {border-color: var(--colorBgFaded);}
 /* commits */
 .commit-group-title {color: var(--colorFg);}
 .commit-group-title .octicon-git-commit {
