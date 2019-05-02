@@ -180,6 +180,32 @@ td.blob-code-inner:hover {background-color: var(--colorBgFaded);}
     color: var(--colorYellow);
 }
 .pl-mi {color: var(--colorWhite);}
+/* community */
+.Subhead {border-color: var(--colorAc);}
+.community-checklist .progress {background-color: var(--colorAc);}
+.community-checklist .progress-bar {
+    background: linear-gradient(90deg,var(--colorHl),#c5e300,#28a745);
+}
+/* commits */
+.commit-group-title {color: var(--colorFg);}
+.commit-group-title .octicon-git-commit {
+    color: var(--colorAc);
+    background-color: transparent;
+}
+.commits-listing:before {background-color: var(--colorBgDarker);}
+.table-list-bordered .table-list-cell:first-child,
+.table-list-bordered .table-list-cell:last-child {
+    border-color: var(--colorAc);
+}
+.commits-list-item.navigation-focus,.commits-list-item[aria-selected=true] {
+    background-color: var(--colorBgFaded);
+.commit .commit-title,.commit .commit-title a {color: var(--colorFg);}
+.commit .commit-title .issue-link {color: var(--colorHl);}
+.commits-list-item .commit-desc pre {color: var(--colorFg);}
+.commits-list-item .commit-author,.commits-list-item .commit-meta {
+    color: var(--colorFgFaded);
+}
+.signed-commit-badge {border-color: var(--colorAc);}
 /* repo code commits compare changes */
 .range-editor {
     background-color: var(--colorBgDarker);
@@ -192,23 +218,15 @@ td.blob-code-inner:hover {background-color: var(--colorBgFaded);}
     border-color: var(--colorAc);
 }
 .blob-num-expandable .directional-expander {color: var(--colorFg);}
-.blob-num-expandable .diff-expander:hover,
-.blob-num-expandable .directional-expander:hover {
+.blob-num-expandable .diff-expander:hover, .blob-num-expandable .directional-expander:hover {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
 }
-.blob-expanded .blob-code, .blob-expanded .blob-num {
-    background-color: var(--colorBgFaded);
-}
+.blob-expanded .blob-code, .blob-expanded .blob-num {background-color: var(--colorBgFaded);}
 .blob-code-hunk {background-color: var(--colorBgFaded);}
 .blob-code-addition {background-color: var(--colorAddition);}
 .blob-code-deletion {background-color: var(--colorDeletion);}
-.blob-expanded+tr:not(.blob-expanded) .blob-code,
-.blob-expanded+tr:not(.blob-expanded) .blob-num,
-tr:not(.blob-expanded)+.blob-expanded .blob-code,
-tr:not(.blob-expanded)+.blob-expanded .blob-num {
-    border-color: var(--colorAc);
-}
+.blob-expanded+tr:not(.blob-expanded) .blob-code,.blob-expanded+tr:not(.blob-expanded) .blob-num,tr:not(.blob-expanded)+.blob-expanded .blob-code,tr:not(.blob-expanded)+.blob-expanded .blob-num {border-color: var(--colorAc);}
 /* repo issues */
 .table-list-header-toggle .btn-link {color: var(--colorFg);}
 .table-list-header-toggle .btn-link:hover {color: var(--colorFgBolded);}
@@ -291,33 +309,6 @@ tr:not(.blob-expanded)+.blob-expanded .blob-num {
 .tint-box {background-color: var(--colorBgDarker);}
 #contributors-master text,#contributors text {fill: var(--colorFg);}
 .capped-card-content {background-color: var(--colorBgDarker);}
-/* community */
-.Subhead {border-color: var(--colorAc);}
-.community-checklist .progress {background-color: var(--colorAc);}
-.community-checklist .progress-bar {
-    background: linear-gradient(90deg,var(--colorHl),#c5e300,#28a745);
-}
-/* commits */
-.commit-group-title {color: var(--colorFg);}
-.commit-group-title .octicon-git-commit {
-    color: var(--colorAc);
-    background-color: transparent;
-}
-.commits-listing:before {background-color: var(--colorBgDarker);}
-.table-list-bordered .table-list-cell:first-child,
-.table-list-bordered .table-list-cell:last-child {
-    border-color: var(--colorAc);
-}
-.commits-list-item.navigation-focus,.commits-list-item[aria-selected=true] {
-    background-color: var(--colorBgFaded);
-}
-.commit .commit-title,.commit .commit-title a {color: var(--colorFg);}
-.commit .commit-title .issue-link {color: var(--colorHl);}
-.commits-list-item .commit-desc pre {color: var(--colorFg);}
-.commits-list-item .commit-author,.commits-list-item .commit-meta {
-    color: var(--colorFgFaded);
-}
-.signed-commit-badge {border-color: var(--colorAc);}
 /* menus,buttons,and forms */
 input::placeholder {color: var(--colorFg);}
 .ellipsis-expander,.hidden-text-expander a {
