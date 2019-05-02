@@ -80,9 +80,16 @@ a.branch-name {color: var(--colorFg);}
 .commits-list-item.navigation-focus, .commits-list-item[aria-selected=true] {
     background-color: var(--colorBgFaded);
 }
-.commit .commit-title, .commit .commit-title a {color: var(--colorFg);}
+.commit .commit-title,.commit .commit-title a {color: var(--colorFg);}
+.commit .commit-title .issue-link {color: var(--colorHl);}
+.commits-list-item .commit-desc pre {color: var(--colorFg);}
 .commits-list-item .commit-author,.commits-list-item .commit-meta {color: var(--colorFgFaded);}
-/* menus and forms */
+.signed-commit-badge {border-color: var(--colorAc);}
+/* menus, buttons, and forms */
+.ellipsis-expander, .hidden-text-expander a {
+    color: var(--colorFg);
+    background-color: var(--colorAc);
+}
 .btn {
     color: var(--colorFg);
     background-color: var(--colorAc);
