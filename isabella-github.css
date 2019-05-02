@@ -1,3 +1,4 @@
+@-moz-document domain("github.com") {
 /* https://isabella-theme.github.io/ */
 body {
     --colorBlack: black;
@@ -296,4 +297,14 @@ details-menu .select-menu-item[aria-selected=true] {
 .form-control.focus,.form-control:focus,.form-select.focus,.form-select:focus {
     border-color: var(--colorHl);
     box-shadow: inherit;
+}
+
+}
+
+@-moz-document domain("help.github.com") {
+/* help.github.com */
+body > div:nth-child(1) {background-color: var(--colorAc) !important;}
+.text-blue-mktg {color: var(--colorHl) !important;}
+body > div:nth-child(1) .width-full .py-2.py-md-0.d-md-inline-block details summary svg {stroke: var(--colorHl) !important;}
+.markdown-body .highlight pre,.markdown-body pre {background-color: var(--colorAc);}
 }
