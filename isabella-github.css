@@ -17,16 +17,17 @@ body {
     background-color: var(--colorBg);
 }
 /* global */
-a,a:hover {color: var(--colorHl);}
+a,.btn-link {color: var(--colorHl);}
 a.branch-name {color: var(--colorFg);}
 .branch-name {background-color: var(--colorAc);}
 .muted-link {color: var(--colorFgFadedMore) !important;}
 .link-gray {color: var(--colorFgFaded) !important;}
 .link-gray-dark {color: var(--colorFgBolded) !important;}
-.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--colorHl) !important;}
+a:hover,.muted-link:hover,.link-gray:hover,.link-gray-dark:hover {color: var(--colorHl) !important;}
 .text-gray {color: var(--colorFgFaded) !important;}
 .text-gray-light {color: var(--colorFgFadedMore) !important;}
 .text-gray-dark {color: var(--colorFgBolded) !important;}
+.text-emphasized {color: var(--colorFgBolded);}
 .bg-white {background-color: var(--colorAc) !important;}
 .bg-gray {background-color: var(--colorBg) !important;}
 .border,.border-top,.border-right,.border-bottom,.border-left {
@@ -42,6 +43,14 @@ a.branch-name {color: var(--colorFg);}
 .jump-to-suggestions-results-container .navigation-focus .jump-to-suggestions-path,
 .jump-to-suggestions-results-container [aria-selected=true] .jump-to-suggestions-path {
     background-color: var(--colorHl);
+}
+/* content */
+.Box,.Box-row {border-color: var(--colorBgDarker);}
+.Box {background-color: var(--colorBgDarker);}
+.news div.message,.news li blockquote {color: var(--colorFgFaded);}
+.table-list-bordered,.table-list-bordered {
+    color: var(--colorFg);
+    border-color: var(--colorBgDarker);
 }
 /* repo top */
 .repohead h1,.repohead h1 .octicon {color: var(--colorFg);}
@@ -61,14 +70,12 @@ a.branch-name {color: var(--colorFg);}
 }
 .reponav-item,.reponav-item .octicon,.reponav-item .Counter {color: var(--colorFg);}
 .reponav-item:hover,.reponav-item:hover .octicon,.reponav-item:hover .Counter {color: var(--colorFgFaded);}
-/* content */
-.Box,.Box-row {border-color: var(--colorBgDarker);}
-.Box {background-color: var(--colorBgDarker);}
-.news div.message,.news li blockquote {color: var(--colorFgFaded);}
-.table-list-bordered,.table-list-bordered {
-    color: var(--colorFg);
-    border-color: var(--colorBgDarker);
-}
+/* repo home */
+.topic-tag {background-color: var(--colorBgDarker);}
+.topic-tag:hover {background-color: var(--colorAc);}
+.overall-summary {border-color: var(--colorAc);}
+.numbers-summary .nolink,.numbers-summary a,.numbers-summary .octicon {color: var(--colorFg);}
+.numbers-summary a:hover,.numbers-summary a:hover .octicon {color: var(--colorHl);}
 /* commits */
 .commit-group-title {color: var(--colorFg);}
 .commit-group-title .octicon-git-commit {
@@ -90,6 +97,7 @@ a.branch-name {color: var(--colorFg);}
     color: var(--colorFg);
     background-color: var(--colorAc);
 }
+.input-contrast:focus {background-color: var(--colorAc);}
 .btn {
     color: var(--colorFg);
     background-color: var(--colorAc);
