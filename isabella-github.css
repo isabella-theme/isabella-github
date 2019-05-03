@@ -37,6 +37,7 @@ a.branch-name {color: var(--colorFg);}
 .muted-link:hover,.link-gray:hover,.link-gray-dark:hover {
     color: var(--colorHl) !important;
 }
+.text-blue {color: var(--colorHl) !important;}
 .text-gray {color: var(--colorFgFaded) !important;}
 .text-gray-light {color: var(--colorFgFadedMore) !important;}
 .text-gray-dark {color: var(--colorFgBolded) !important;}
@@ -44,8 +45,15 @@ a.branch-name {color: var(--colorFg);}
 .bg-white {background-color: var(--colorAc) !important;}
 .bg-blue-light {background-color: var(--colorAc) !important;}
 .bg-gray {background-color: var(--colorBg) !important;}
+.bg-gray-light {background-color: var(--colorBg) !important;}
 .border,.border-top,.border-right,.border-bottom,.border-left {
     border-color: var(--colorBgDarker) !important;
+}
+.toolbar-item {color: var(--colorFg);}
+.toolbar-item .menu-target {color: var(--colorFg);}
+.toolbar-item .menu-target:focus,.toolbar-item:focus,
+.toolbar-item .menu-target:hover,.toolbar-item:hover {
+    color: var(--colorHl);
 }
 /* github nav bar */
 .Header {background-color: var(--colorAc);}
@@ -199,6 +207,7 @@ td.blob-code-inner:hover {background-color: var(--colorBgFaded);}
 }
 .commits-list-item.navigation-focus,.commits-list-item[aria-selected=true] {
     background-color: var(--colorBgFaded);
+}
 .commit .commit-title,.commit .commit-title a {color: var(--colorFg);}
 .commit .commit-title .issue-link {color: var(--colorHl);}
 .commits-list-item .commit-desc pre {color: var(--colorFg);}
@@ -218,15 +227,23 @@ td.blob-code-inner:hover {background-color: var(--colorBgFaded);}
     border-color: var(--colorAc);
 }
 .blob-num-expandable .directional-expander {color: var(--colorFg);}
-.blob-num-expandable .diff-expander:hover, .blob-num-expandable .directional-expander:hover {
+.blob-num-expandable .diff-expander:hover,
+.blob-num-expandable .directional-expander:hover {
     color: var(--colorHlFg);
     background-color: var(--colorHl);
 }
-.blob-expanded .blob-code, .blob-expanded .blob-num {background-color: var(--colorBgFaded);}
+.blob-expanded .blob-code,.blob-expanded .blob-num {
+    background-color: var(--colorBgFaded);
+}
 .blob-code-hunk {background-color: var(--colorBgFaded);}
 .blob-code-addition {background-color: var(--colorAddition);}
 .blob-code-deletion {background-color: var(--colorDeletion);}
-.blob-expanded+tr:not(.blob-expanded) .blob-code,.blob-expanded+tr:not(.blob-expanded) .blob-num,tr:not(.blob-expanded)+.blob-expanded .blob-code,tr:not(.blob-expanded)+.blob-expanded .blob-num {border-color: var(--colorAc);}
+.blob-expanded+tr:not(.blob-expanded) .blob-code,
+.blob-expanded+tr:not(.blob-expanded) .blob-num,
+tr:not(.blob-expanded)+.blob-expanded .blob-code,
+tr:not(.blob-expanded)+.blob-expanded .blob-num {
+    border-color: var(--colorAc);
+}
 /* repo issues */
 .table-list-header-toggle .btn-link {color: var(--colorFg);}
 .table-list-header-toggle .btn-link:hover {color: var(--colorFgBolded);}
@@ -234,8 +251,39 @@ td.blob-code-inner:hover {background-color: var(--colorBgFaded);}
 .table-list-header-toggle .btn-link.selected:hover {
     color: var(--colorFgBolded);
 }
+/* repo new issue */
+.composer.composer-responsive .timeline-comment {
+    border-color: var(--colorBgDarker);
+}
+.related-issue-item.navigation-focus,.similar-issue-item.navigation-focus {
+    background-color: var(--colorBgFaded);
+}
+.composer.composer-responsive .timeline-comment:after,
+.composer.composer-responsive .timeline-comment:before {
+    display: none;
+}
+.upload-enabled textarea {border-bottom: initial;}
+.upload-enabled.focused {box-shadow: initial;}
+.upload-enabled.focused .drag-and-drop {border-color: var(--colorBg);}
+.drag-and-drop {
+    color: var(--colorFg);
+    background-color: var(--colorBg);
+    border-color: var(--colorBg);
+}
+.new-discussion-timeline .previewable-comment-form .comment-body {
+    border-color: var(--colorAc);
+}
+.tabnav-extra {color: var(--colorFg);}
+a.tabnav-extra:hover {color: var(--colorHl);}
+.discussion-sidebar-item+.discussion-sidebar-item {
+    border-color: var(--colorBgDarker);
+}
 /* issues threads */
 .discussion-timeline:before {background-color: var(--colorBgDarker);}
+.discussion-timeline-actions {
+    background-color: var(--colorBg);
+    border-color: var(--colorBgDarker);
+}
 .timeline-comment {background-color: var(--colorBgDarker);}
 .timeline-comment-wrapper,.timeline-comment.current-user {
     border-color: var(--colorBgDarker);
@@ -275,9 +323,17 @@ td.blob-code-inner:hover {background-color: var(--colorBgFaded);}
 .timeline-commits .commit-message>code a:hover {color: var(--colorHl);}
 .commit-id {color: var(--colorFg);}
 .commit-id:hover {color: var(--colorHl);}
+.timeline-comment {border-color: var(--colorBgDarker);}
+.timeline-comment-wrapper>.timeline-comment:after,
+.timeline-comment-wrapper>.timeline-comment:before,
+.timeline-new-comment .timeline-comment:after,
+.timeline-new-comment .timeline-comment:before {
+    border-right-color: var(--colorBgDarker);
+}
 .discussion-sidebar-heading {color: var(--colorFg);}
 .discussion-sidebar-toggle:hover {color: var(--colorHl);}
 .discussion-sidebar-item {color: var(--colorFgFaded);}
+.thread-subscription-status {background-color: var(--colorBg);}
 /* repo labels */
 .labels-list-action {color: var(--colorFg);}
 .label-description.text-gray {color: var(--colorFg) !important;}
@@ -404,6 +460,7 @@ details-menu .select-menu-item[aria-selected=true] {
     border-color: var(--colorHl);
     box-shadow: inherit;
 }
+
 }
 
 @-moz-document domain("raw.githubusercontent.com") {
@@ -419,6 +476,10 @@ body {
 /* help.github.com */
 body > div:nth-child(1) {background-color: var(--colorAc) !important;}
 .text-blue-mktg {color: var(--colorHl) !important;}
-body > div:nth-child(1) .width-full .py-2.py-md-0.d-md-inline-block details summary svg {stroke: var(--colorHl) !important;}
-.markdown-body .highlight pre,.markdown-body pre {background-color: var(--colorAc);}
+body > div:nth-child(1) .width-full .py-2.py-md-0.d-md-inline-block details summary svg {
+    stroke: var(--colorHl) !important;
+}
+.markdown-body .highlight pre,.markdown-body pre {
+    background-color: var(--colorAc);
+}
 }
