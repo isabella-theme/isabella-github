@@ -79,6 +79,8 @@ a.branch-name {color: var(--colorFg);}
 .Box {background-color: var(--colorBgDarker);}
 .Box-body {border-color: var(--colorBgDarker);}
 .Box-row--focus-gray.navigation-focus {background-color: var(--colorBgFaded);}
+.Box-row--gray {background-color: var(--colorBgDarker);}
+.Box-footer {border-top-color: var(--colorBgFaded);}
 .blankslate {
     background-color: var(--colorBgDarker);
     border-color: var(--colorBgDarker);
@@ -102,25 +104,32 @@ a.branch-name {color: var(--colorFg);}
 .markdown-body table tr {background-color: var(--colorBg);}
 .markdown-body table td,.markdown-body table th {border-color: var(--colorAc);}
 .markdown-body table tr:nth-child(2n) {background-color: var(--colorBgFaded);}
-/* repo top */
-.repohead h1,.repohead h1 .octicon {color: var(--colorFg);}
+.markdown-body .highlight pre,.markdown-body pre {
+    background-color: var(--colorBg);
+}
+/* repo and organization top */
+.orghead,.orghead h1,.orghead h1 .octoicon,.repohead h1,.repohead h1 .octicon {
+    color: var(--colorFg);
+}
 .pagehead-actions>li {color: var(--colorFg);}
 .social-count {
     color: var(--colorFg);
     background-color: var(--colorBg);
 }
 .social-count:hover {color: var(--colorHl);}
-/* repo nav */
-.repohead.experiment-repo-nav {background-color: var(--colorAc);}
-.pagehead {border-color: var(--colorAc);}
-.reponav-item.selected {
+/* repo and organization nav */
+.orghead,.repohead.experiment-repo-nav {background-color: var(--colorAc);}
+.orghead,.pagehead {border-color: var(--colorAc);}
+.pagehead-tabs-item.selected,.reponav-item.selected {
     color: var(--colorFg);
     background-color: var(--colorBg);
     border-color: var(--colorHl) var(--colorBg) var(--colorBg);
 }
+.pagehead-tabs-item .Counter,.pagehead-tabs-item,
 .reponav-item,.reponav-item .octicon,.reponav-item .Counter {
     color: var(--colorFg);
 }
+.pagehead-tabs-item:hover,
 .reponav-item:focus,.reponav-item:focus .octicon,.reponav-item:focus .Counter,
 .reponav-item:hover,.reponav-item:hover .octicon,.reponav-item:hover .Counter {
     color: var(--colorFgFaded);
